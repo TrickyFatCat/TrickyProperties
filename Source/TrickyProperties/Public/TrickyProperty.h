@@ -11,13 +11,13 @@ struct FTrickyProperty
 {
 	GENERATED_BODY()
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=TrickyProperty)
 	float MinValue = 0.0f;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=TrickyProperty)
 	float Value = 100.0f;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=TrickyProperty)
 	float MaxValue = 100.0f;
 
 	bool IncreaseMinValue(const float Amount = 1.0f)

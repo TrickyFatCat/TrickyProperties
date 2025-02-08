@@ -17,30 +17,30 @@ class TRICKYPROPERTIES_API UTrickyPropertiesLibrary : public UBlueprintFunctionL
 	GENERATED_BODY()
 
 public:
-	UFUNCTION(BlueprintCallable, meta=(AutoCreateRefTerm=Property))
+	UFUNCTION(BlueprintCallable, Category=TrickyProperty, meta=(AutoCreateRefTerm=Property))
 	static bool IncreaseMinValue(UPARAM(ref) FTrickyProperty& Property, const float Amount);
 	
-	UFUNCTION(BlueprintCallable, meta=(AutoCreateRefTerm=Property))
+	UFUNCTION(BlueprintCallable, Category=TrickyProperty, meta=(AutoCreateRefTerm=Property))
 	static bool DecreaseMinValue(UPARAM(ref) FTrickyProperty& Property, const float Amount);
 	
-	UFUNCTION(BlueprintCallable, meta=(AutoCreateRefTerm=Property))
+	UFUNCTION(BlueprintCallable, Category=TrickyProperty, meta=(AutoCreateRefTerm=Property))
 	static bool IncreaseValue(UPARAM(ref) FTrickyProperty& Property, const float Amount);
 	
-	UFUNCTION(BlueprintCallable, meta=(AutoCreateRefTerm=Property))
+	UFUNCTION(BlueprintCallable, Category=TrickyProperty, meta=(AutoCreateRefTerm=Property))
 	static bool DecreaseValue(UPARAM(ref) FTrickyProperty& Property, const float Amount);
 	
-	UFUNCTION(BlueprintCallable, meta=(AutoCreateRefTerm=Property))
+	UFUNCTION(BlueprintCallable, Category=TrickyProperty, meta=(AutoCreateRefTerm=Property))
 	static bool IncreaseMaxValue(UPARAM(ref) FTrickyProperty& Property, const float Amount);
 	
-	UFUNCTION(BlueprintCallable, meta=(AutoCreateRefTerm=Property))
+	UFUNCTION(BlueprintCallable, Category=TrickyProperty, meta=(AutoCreateRefTerm=Property))
 	static bool DecreaseMaxValue(UPARAM(ref) FTrickyProperty& Property, const float Amount);
 
-	UFUNCTION(BlueprintCallable, BlueprintPure, meta=(AutoCreateRefTerm=Property))
+	UFUNCTION(BlueprintCallable, Category=TrickyProperty, BlueprintPure, meta=(AutoCreateRefTerm=Property))
 	static void ClampToMin(UPARAM(ref) FTrickyProperty& Property);
 	
-	UFUNCTION(BlueprintCallable, BlueprintPure, meta=(AutoCreateRefTerm=Property))
+	UFUNCTION(BlueprintCallable, Category=TrickyProperty, BlueprintPure, meta=(AutoCreateRefTerm=Property))
 	static void ClampToMax(UPARAM(ref) FTrickyProperty& Property);
 	
-	UFUNCTION(BlueprintCallable, BlueprintPure, meta=(AutoCreateRefTerm=Property))
+	UFUNCTION(BlueprintCallable, Category=TrickyProperty, BlueprintPure, meta=(AutoCreateRefTerm=Property))
 	static float GetNormalizedValue(UPARAM(ref) const FTrickyProperty& Property);
 };
