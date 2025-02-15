@@ -3,7 +3,7 @@
 	"Version": 1,
 	"VersionName": "3.0",
 	"FriendlyName": "TrickyProperties",
-	"Description": "A module for rapid prototyping to easily create and adjust properties like health, stamina, armor, etc.",
+	"Description": "A plugin for rapid prototyping to easily create and adjust properties like health, stamina, armor, etc.",
 	"Category": "Tricky Prototyping",
 	"CreatedBy": "Artyom \"Tricky_Fat_Cat\" Volkov",
 	"CreatedByURL": "",
