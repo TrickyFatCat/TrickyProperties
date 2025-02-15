@@ -10,15 +10,9 @@ struct FTrickyPropertyFloat
 {
 	GENERATED_BODY()
 
-	/**
-	 * Defines the minimum value for the property.
-	 */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=TrickyProperty)
 	float MinValue = 0.0f;
 
-	/**
-	 * Defines the maximum value of the property.
-	 */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=TrickyProperty)
 	float Value = 100.0f;
 	
