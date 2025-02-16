@@ -1,0 +1,98 @@
+﻿# About
+
+**Tricky Properties** is a plugin for rapid prototyping in Unreal Engine 5.
+
+It provides a set of properties for managing numeric data (int and float), especially useful for gameplay mechanics like
+health, stamina, armor, etc.
+
+---
+
+## Features
+
+- **Property Structures**:
+    - **Float Properties** (`FTrickyPropertyFloat`).
+    - **Int Properties** (`FTrickyPropertyInt`).
+
+- **Calculations**:
+    - Increase/Decrease values, min, and max limits.
+    - Clamp values to specified minimum or maximum.
+
+- **Blueprint Integration**:
+    - All functionalities are fully accessible in Blueprints.
+    - Easy-to-use Blueprint utility functions.
+
+---
+
+## Installation
+
+1. Copy the plugin folder into your project's `Plugins` directory.
+2. Open your Unreal Engine project.
+3. Enable the **Tricky Properties Plugin** in the plugins menu.
+4. Restart the editor.
+
+---
+
+## Example Use Cases
+
+- **Health System**:
+    - Use `FTrickyPropertyFloat` to control HP values with clamping and normalization for progress bars.
+
+- **Ammo/Inventory Counters**:
+    - Use `FTrickyPropertyInt` to manage ammo or item stacks with min/max constraints.
+
+---
+
+## Functions Overview
+
+The **Tricky Properties Library** provides a number of Blueprint utility functions for working with
+`FTrickyPropertyFloat` and `FTrickyPropertyInt`.
+
+### Float Property Functions
+
+1. **`IncreaseMinValueFloat`**
+    - Increases the minimum value of the float property by a specified amount.
+2. **`DecreaseMinValueFloat`**
+    - Decreases the minimum value of the float property by a specified amount.
+3. **`IncreaseValueFloat`**
+    - Increases the current value of the float property by a specified amount.
+4. **`DecreaseValueFloat`**
+    - Decreases the current value of the float property by a specified amount.
+5. **`IncreaseMaxValueFloat`**
+    - Increases the maximum value of the float property by a specified amount.
+6. **`DecreaseMaxValueFloat`**
+    - Decreases the maximum value of the float property by a specified amount.
+7. **`ClampToMinFloat`**
+    - Ensures the current value does not fall below the minimum value.
+8. **`ClampToMaxFloat`**
+    - Ensures the current value does not exceed the maximum value.
+9. **`GetNormalizedValueFloat`**
+    - Returns the normalized value of the float property as a percentage (`Value / MaxValue`).
+10. **`ReachedMinValueFloat`**
+    - Checks if the current value has reached or is below the minimum value.
+11. **`ReachedMaxValueFloat`**
+    - Checks if the current value has reached or is above the maximum value.
+
+### Int Property Functions
+
+1. **`IncreaseMinValueInt`**
+    - Increases the minimum value of the float property by a specified amount.
+2. **`DecreaseMinValueInt`**
+    - Decreases the minimum value of the float property by a specified amount.
+3. **`IncreaseValueInt`**
+    - Increases the current value of the float property by a specified amount.
+4. **`DecreaseValueInt`**
+    - Decreases the current value of the float property by a specified amount.
+5. **`IncreaseMaxValueInt`**
+    - Increases the maximum value of the float property by a specified amount.
+6. **`DecreaseMaxValueInt`**
+    - Decreases the maximum value of the float property by a specified amount.
+7. **`ClampToMinInt`**
+    - Ensures the current value does not fall below the minimum value.
+8. **`ClampToMaxInt`**
+    - Ensures the current value does not exceed the maximum value.
+9. **`GetNormalizedValueInt`**
+    - Returns the normalized value of the float property as a percentage (`Value / MaxValue`).
+10. **`ReachedMinValueInt`**
+    - Checks if the current value has reached or is below the minimum value.
+11. **`ReachedMaxValueInt`**
+    - Checks if the current value has reached or is above the maximum value.
