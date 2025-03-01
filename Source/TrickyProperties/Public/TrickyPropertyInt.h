@@ -34,6 +34,10 @@ struct FTrickyPropertyInt
 	void ClampToMin();
 
 	void ClampToMax();
+
+	void ResetToMin();
+
+	void ResetToMax();
 	
 	int32 GetNormalizedValue() const;
 

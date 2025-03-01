@@ -34,6 +34,10 @@ struct FTrickyPropertyFloat
 	void ClampToMin();
 
 	void ClampToMax();
+
+	void ResetToMin();
+
+	void ResetToMax();
 	
 	float GetNormalizedValue() const;
 

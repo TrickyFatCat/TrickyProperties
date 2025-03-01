@@ -79,6 +79,16 @@ void FTrickyPropertyInt::ClampToMax()
 	Value = FMath::Min(Value, MaxValue);
 }
 
+void FTrickyPropertyInt::ResetToMin()
+{
+	Value = MinValue;
+}
+
+void FTrickyPropertyInt::ResetToMax()
+{
+	Value = MaxValue;
+}
+
 int32 FTrickyPropertyInt::GetNormalizedValue() const
 {
 	return MaxValue > 0 ? static_cast<float>(Value) / static_cast<float>(MaxValue) : 0;

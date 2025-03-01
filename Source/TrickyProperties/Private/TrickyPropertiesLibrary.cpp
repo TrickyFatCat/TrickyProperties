@@ -46,6 +46,16 @@ void UTrickyPropertiesLibrary::ClampToMaxFloat(FTrickyPropertyFloat& Property)
 	Property.ClampToMax();
 }
 
+void UTrickyPropertiesLibrary::ResetToMinValueFloat(FTrickyPropertyFloat& Property)
+{
+	Property.ClampToMin();
+}
+
+void UTrickyPropertiesLibrary::ResetToMaxValueFloat(FTrickyPropertyFloat& Property)
+{
+	Property.ClampToMax();
+}
+
 float UTrickyPropertiesLibrary::GetNormalizedValueFloat(const FTrickyPropertyFloat& Property)
 {
 	return Property.GetNormalizedValue();
@@ -98,6 +108,16 @@ void UTrickyPropertiesLibrary::ClampToMinInt(FTrickyPropertyInt& Property)
 }
 
 void UTrickyPropertiesLibrary::ClampToMaxInt(FTrickyPropertyInt& Property)
+{
+	Property.ClampToMax();
+}
+
+void UTrickyPropertiesLibrary::ResetToMinValueInt(FTrickyPropertyInt& Property)
+{
+	Property.ClampToMin();
+}
+
+void UTrickyPropertiesLibrary::ResetToMaxValueInt(FTrickyPropertyInt& Property)
 {
 	Property.ClampToMax();
 }

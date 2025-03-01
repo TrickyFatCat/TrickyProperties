@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "TrickyPropertyFloat.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "TrickyPropertiesLibrary.generated.h"
 
@@ -96,6 +97,22 @@ public:
 	 */
 	UFUNCTION(BlueprintCallable, Category=TrickyProperties)
 	static void ClampToMaxFloat(UPARAM(ref) FTrickyPropertyFloat& Property);
+
+	/**
+	 * Resets the current value of the specified FTrickyPropertyFloat to its minimum value.
+	 *
+	 * @param Property A reference to the FTrickyPropertyFloat instance.
+	 */
+	UFUNCTION(BlueprintCallable, Category=TrickyProperties)
+	static void ResetToMinValueFloat(UPARAM(ref) FTrickyPropertyFloat& Property);
+
+	/**
+	 * Resets the current value of the specified FTrickyPropertyFloat to its maximum value.
+	 *
+	 * @param Property A reference to the FTrickyPropertyFloat instance.
+	 */
+	UFUNCTION(BlueprintCallable, Category=TrickyProperties)
+	static void ResetToMaxValueFloat(UPARAM(ref) FTrickyPropertyFloat& Property);
 
 	/**
 	 * Retrieves the normalized value of the specified FTrickyPropertyFloat instance.
@@ -201,6 +218,22 @@ public:
 	UFUNCTION(BlueprintCallable, Category=TrickyProperties)
 	static void ClampToMaxInt(UPARAM(ref) FTrickyPropertyInt& Property);
 
+	/**
+	 * Resets the current value of the specified FTrickyPropertyInt to its minimum value.
+	 *
+	 * @param Property A reference to the FTrickyPropertyInt instance.
+	 */
+	UFUNCTION(BlueprintCallable, Category=TrickyProperties)
+	static void ResetToMinValueInt(UPARAM(ref) FTrickyPropertyInt& Property);
+
+	/**
+	 * Resets the current value of the specified FTrickyPropertyInt to its maximum value.
+	 *
+	 * @param Property A reference to the FTrickyPropertyInt instance.
+	 */
+	UFUNCTION(BlueprintCallable, Category=TrickyProperties)
+	static void ResetToMaxValueInt(UPARAM(ref) FTrickyPropertyInt& Property);
+	
 	/**
 	 * Calculates the normalized value of the given FTrickyPropertyInt instance.
 	 *

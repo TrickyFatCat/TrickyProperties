@@ -79,6 +79,16 @@ void FTrickyPropertyFloat::ClampToMax()
 	Value = FMath::Min(Value, MaxValue);
 }
 
+void FTrickyPropertyFloat::ResetToMin()
+{
+	Value = MinValue;
+}
+
+void FTrickyPropertyFloat::ResetToMax()
+{
+	Value = MaxValue;
+}
+
 float FTrickyPropertyFloat::GetNormalizedValue() const
 {
 	return MaxValue > 0.f ? Value / MaxValue : 0.f;
