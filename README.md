@@ -57,11 +57,15 @@ The **Tricky Properties Library** provides a number of Blueprint utility functio
     - Clamps the current value to the minimum value.
 8. **`ClampToMaxFloat`**
     - Clamps the current value to the maximum value.
-9. **`GetNormalizedValueFloat`**
+9. **`ResetToMinFloat`**
+    - Resets the current value to the minimum value.
+10. **`ResetToMaxFloat`**
+    - Resets the current value to the maximum value.
+11. **`GetNormalizedValueFloat`**
     - Returns the normalized value of the float property.
-10. **`ReachedMinValueFloat`**
+12. **`ReachedMinValueFloat`**
     - Checks if the current value has reached or is below the minimum value.
-11. **`ReachedMaxValueFloat`**
+13. **`ReachedMaxValueFloat`**
     - Checks if the current value has reached or is above the maximum value.
 
 ### Int Property Functions
@@ -82,9 +86,13 @@ The **Tricky Properties Library** provides a number of Blueprint utility functio
     - Clamps the current value to the minimum value.
 8. **`ClampToMaxInt`**
     - Clamps the current value to the maximum value.
-9. **`GetNormalizedValueInt`**
+9. **`ResetToMinInt`**
+    - Resets the current value to the minimum value.
+10. **`ResetToMaxInt`**
+    - Resets the current value to the maximum value.
+11. **`GetNormalizedValueInt`**
     - Returns the normalized value of the int property.
-10. **`ReachedMinValueInt`**
+12. **`ReachedMinValueInt`**
     - Checks if the current value is less or equal to the minimum value.
-11. **`ReachedMaxValueInt`**
+13. **`ReachedMaxValueInt`**
     - Checks if the current value is less or equal to the maximum value.
