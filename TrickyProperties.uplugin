@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
-	"Version": 3,
-	"VersionName": "3.55.2",
+	"Version": 4,
+	"VersionName": "3.55.3",
 	"FriendlyName": "TrickyProperties",
 	"Description": "A plugin for rapid prototyping to easily create and adjust properties like health, stamina, armor, etc.",
 	"Category": "Tricky Prototyping",
