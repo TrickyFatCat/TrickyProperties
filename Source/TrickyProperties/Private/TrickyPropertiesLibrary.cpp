@@ -3,9 +3,6 @@
 
 #include "TrickyPropertiesLibrary.h"
 
-#include "TrickyPropertyFloat.h"
-#include "TrickyPropertyInt.h"
-
 bool UTrickyPropertiesLibrary::IncreaseMinValueFloat(FTrickyPropertyFloat& Property, const float Amount)
 {
 	return Property.IncreaseMinValue(Amount);
