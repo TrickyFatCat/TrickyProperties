@@ -224,7 +224,7 @@ struct FTrickyPropertyInt
 		Value = MaxValue;
 	}
 
-	int32 GetNormalizedValue() const
+	float GetNormalizedValue() const
 	{
 		return MaxValue > 0 ? static_cast<float>(Value) / static_cast<float>(MaxValue) : 0;
 	}
